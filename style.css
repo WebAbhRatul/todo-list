@@ -29,14 +29,14 @@ form button {
   outline: none;
 }
 form button {
-  color: #fda085;
+  color: #070301;
   background: white;
   cursor: pointer;
   transition: all 0.3s ease;
 }
 form button:hover {
   color: white;
-  background: #fda085;
+  background: #ff6f47;
 }
 .todo-container {
   display: flex;
@@ -85,4 +85,37 @@ form button:hover {
 .fall {
   transform: translateY(8rem) rotateZ(50deg);
   opacity: 0;
+}
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+}
+.select {
+  margin: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+select {
+  color: #ff6f47;
+  width: 10rem;
+  cursor: pointer;
+  padding: 1rem;
+}
+.select::after {
+  content: "\25BC";
+  position: absolute;
+  background: #ff6f47;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  cursor: pointer;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.select:hover::after {
+  background-color: white;
+  color: #ff6f47;
 }
